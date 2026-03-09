@@ -1,0 +1,13 @@
+[33mcafca04[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to ORIG_HEAD
+[33m183f181[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: commit: Add folders normally
+[33m0fbac98[m HEAD@{2}: commit: Remove broken submodule 01_Fundamentals
+[33mbd55b50[m HEAD@{3}: rebase (finish): returning to refs/heads/main
+[33mbd55b50[m HEAD@{4}: rebase (continue): message
+[33me34ba8e[m HEAD@{5}: pull origin main --rebase (start): checkout e34ba8e308bca4c7336baf51f4748ca64590354c
+[33mcafca04[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{6}: commit: message
+[33mdb26fc1[m HEAD@{7}: pull origin main --rebase: Fast-forward
+[33m3776dc3[m HEAD@{8}: pull origin main --rebase (finish): returning to refs/heads/main
+[33m3776dc3[m HEAD@{9}: pull origin main --rebase (pick): Initial commit
+[33m4d7b873[m HEAD@{10}: pull origin main --rebase (start): checkout 4d7b87308f750b221946251ffe57bfc6ddecdee7
+[33mc1a8c7c[m HEAD@{11}: Branch: renamed refs/heads/master to refs/heads/main
+[33mc1a8c7c[m HEAD@{13}: commit (initial): Initial commit
