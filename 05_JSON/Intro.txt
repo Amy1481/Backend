@@ -1,0 +1,1 @@
+JSON is known as javascript object notation is simply a data representation
