@@ -1,0 +1,149 @@
+
+GET : retrieve a resource 
+HEAD : No message body(Response headers only)
+OPTIONS : What operations are available
+TRACE : loopback test(get some data)
+DELETE : remove a resource
+PUT :replace a resource
+POST :interact with resource 
+PATCH : change part of a resource
+
+General
+-Request URL
+-Request Method
+-Status code
+-Remote address
+-Referrer Policy
+
+Response
+-Server
+-Set-Cookie
+-Content-Type
+-COntent-Length
+-Date
+
+Request
+-Cookies
+-Accept-xxx
+-Content-Type
+-COntent-Length
+-Authorization
+-User-Agent
+-Referrer
+Chapter1:Network Basics
+What is http?
+It is something we probably type in our web browser every single time we visit a website
+Network is simply 2 devices that are linked together by wire or wireless connection thus there is a physical connection between 2 devices that is a router(a piece of equipment that's only job is sort of to talk to one another & send traffic back and forth between various devices on a network)
+
+In university or college there are multiple campuses in separate physical locations & those campuses are interconnected with each other also same as known to be local area network(LAN) Then comes the network across the entire globe i.e world wide web(www) i.e a global network of devices that are interconnected across cities states or even countries and oceans 
+
+Continents are actually connected to each other via physical cables that lie on the bottom of the ocean floor so these are called submarine cables.Thats how internet works across multiple countries is along the same physical connection that lay at the bottom of the ocean floor
+
+The reason the internet is able to work so quickly cause the internet travels along this these cables at the speed of light i.e the fiber optic cables(made up of glass fibers & light gets shot along these glass fibers so the signal or the data thats transferred between these various end points travel at the speed of light)
+
+Once the internet reaches your house it typically runs over an electrical signal to go actually into your house  & that travels every quickly but not as fast as the speed of light
+
+Chapter2:HTTP Basics
+HTTP-Hyper Text Transfer Protocol
+It is a set of rules that governs how 2 devices are supposed to talk to one another 
+The device that is we are consuming is called the client machine/local machine & the computer you are interfacing with,that actually houses the website files that you are pulling up is What we call server machine/remote machine and we have router in between them that does the actual talking
+
+How it works: 
+The client machine makes a request to the server & the server machine has a response that it sends back to the client so we have a request and response and those 2 things always happen over http.So what happens here is when a request happens so this guy sends a request over to server & this server is basically gonna ask itself the question it says do i have the files that the client machine is requesting so it gonna response back and send back a response with sort of yes or no & if it has those files that were requested it of course sends those files along if it does not have then sends a error or a status code(it is always used and these codes are 3-digit numbers and helps the client to know yes or no) 
+
+HTTP Status code 
+It is mainly divided into 5 categories from 100 to 500 3-digit numbers:
+1xx informational
+2xx success ex 200(success)
+3xx redirection
+4xx client error ex 404(Page not found)
+5xx server error 
+
+Get and request response headers
+
+HTTP Request
+The request that the client sends to the server,that request goes through what's known as a headers
+Headers is the first few lines of the request that gets sent and it's made up of 3 parts:
+
+1st part known as start line and it is made up of 3 portions here
+   GET/background.pngHTTP/1.0
+   1st     2nd            3rd  portions
+   (a) Method(1st portion) is the start of the start line so this is how the request is being put together it's typically either get or post
+   (b) Target(2nd portion) is the which exact file the client is trying to locate
+   (c) Version(3rd portion) of http we are using
+
+2nd part is the actual headers which has some additional information about the request.Here in sample we can see we have user agent thats what web browser the client is using thats sent to the server because thats helpful information for the server to be able to process the request
+    User-Agent:Mozilla/5.0
+
+3rd part is the body
+    None for GET means when we are sending the request we are typically there is nothing in the body of the request thats typically what the server uses to send back the files that are requested
+
+HTTP Response 
+The server is going to give you the response & it also has this header files that are made up of 3 specific parts:
+
+1st part known as starting line(it is little bit different from request )
+     HTTP/1.1 404 Not Found 
+     1st      2nd    3rd
+
+     (a) Version(1st portion) of http we are using
+     (b) Status code(2nd portion)
+     (c) Status Text(3rd portion) 
+
+2nd part called headers that has information about the files that its sending back
+    Content-Type:Image/png
+
+3rd part is the body which is the actual resource the server is going to send back
+    The file/resource requested
+
+
+#Notes
+-HTTP 1.0 is stateless(means the request sent and response received the connection between the devices is broken so there is nothing its not maintained)
+-Based on TCP/IP
+-3 parts to the request/response messages
+
+
+# Hyper Text Transfer Protocol (HTTP)
+# HTTP Headers (metadata : key-value(name:Amy) sent along with request & response) used for caching,authentication,manage state 
+# Request headers - from client
+# Response headers - from servers
+# Representation headers - encoding/compression
+# Payload headers - data
+
+# Most common headers 
+# Accept: application/json
+# User-Agent: 
+# Authorization: 
+# Content-Type: 
+# Cookie: 
+# Cache-Control: 
+
+# CORS
+# Access-Control-Allow-Origin: 
+# Access-Control-Allow-Credentials: 
+# Access-Control-Allow-Method: 
+
+# Security
+# Cross-Origin-Embedder-Policy:
+# Cross-Origin-Opener-Policy:
+# Content-Security-Policy:
+# X-XSS-Protection:
+
+# HTTP Methods(Basic set of operations that can be used to interact with server)
+GET : retrieve a resource/data from the server 
+HEAD : No message body(Response headers only)
+OPTIONS : What operations are available
+TRACE : loopback test(get some data)
+DELETE : remove a resource/data from the server
+PUT :update data already on the server
+POST :submit data to the server
+PATCH : change part of a resource
+
+
+HTTP ver2
+major revision of http
+under the hood changes
+respond with more data
+reduce latency by enabling full req and res multiplexing 
+fast,efficient & secure 
+
+JSON is known as javascript object notation is simply a data representation
