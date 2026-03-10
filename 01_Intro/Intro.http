@@ -1,0 +1,8 @@
+GET : retrieve a resource 
+HEAD : No message body(Response headers only)
+OPTIONS : What operations are available
+TRACE : loopback test(get some data)
+DELETE : remove a resource
+PUT :replace a resource
+POST :interact with resource 
+PATCH : change part of a resource

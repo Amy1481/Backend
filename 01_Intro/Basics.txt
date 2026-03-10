@@ -1,13 +1,3 @@
-
-GET : retrieve a resource 
-HEAD : No message body(Response headers only)
-OPTIONS : What operations are available
-TRACE : loopback test(get some data)
-DELETE : remove a resource
-PUT :replace a resource
-POST :interact with resource 
-PATCH : change part of a resource
-
 General
 -Request URL
 -Request Method
@@ -146,4 +136,3 @@ respond with more data
 reduce latency by enabling full req and res multiplexing 
 fast,efficient & secure 
 
-JSON is known as javascript object notation is simply a data representation
